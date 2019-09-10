@@ -7,13 +7,20 @@ import "./App.css";
 import Logo from "./components/DisplayComponents/Logo";
 import Numbers from './components/ButtonComponents/NumberButtons/Numbers'
 import Display from "./components/DisplayComponents/Display";
+import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
 
 
 function App() {
   const [displayValue, setDisplayValue] = useState(0)
+  
   const addNumber = (number) => {
     setDisplayValue(displayValue => displayValue + number)
   }
+
+  // const addOperational = (number) => {
+  //   setDisplayValue(displayValue => displayValue)
+  // }
+
   // const addNumber = (number) => {
   //   setDisplayValue(displayValue => displayValue + number )
     
@@ -29,7 +36,8 @@ function App() {
       <Logo />
       <Display number={displayValue}/>
       <div className="App">
-      <Numbers addNumbers={ addNumber }/>
+      <Numbers addNumbers={addNumber}/>
+       <Operators addNumbers={addNumber} /> 
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
     </div>

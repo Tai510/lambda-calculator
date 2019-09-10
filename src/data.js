@@ -7,9 +7,16 @@
 const numbers1 = ["7", "8", "9"];
 const numbers2 = ["4", "5", "6"];
 const numbers3 = ["1", "2", "3"];
-const numbers4 = ["0"]
+const numbers4 = ["0", "."]
 
-const operators = [
+const operators1 = [
+  {
+    char: "=",
+    value: "="
+  }
+]
+
+const operators2 = [
   {
     char: "/",
     value: "/"
@@ -25,13 +32,11 @@ const operators = [
   {
     char: "+",
     value: "+"
-  },
-  {
-    char: "=",
-    value: "="
   }
 ];
 
+
+
 const specials = ["C", "+/-", "%"];
 
-export { numbers1, numbers2, numbers3, numbers4, operators, specials };
+export { numbers1, numbers2, numbers3, numbers4, operators1, operators2, specials };
