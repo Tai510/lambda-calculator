@@ -7,10 +7,9 @@
     padding-bottom: 25px;
 }
 .display {
-    margin-top: 25px;
     height: 100px;
     width: 450px;
-    border-radius: 50px;
+    border-radius: 5px;
     color: white;
     background-color: #322c2d;
     box-shadow: 1px 1px #322c2d;
@@ -19,4 +18,23 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
+    margin: 0 27px;
+    margin-bottom: 30px;
+  }
+
+  .numbers-buttons {
+      display: flex;
+      flex-direction: column;
+      text-align: center
+  }
+
+  .logo {
+      margin: 0 200px;
+  }
+
+
+  .button-style {
+      width: 130px;
+      height: 55px;
+      font-size: 20px;
   }
