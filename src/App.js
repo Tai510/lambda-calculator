@@ -8,6 +8,7 @@ import Logo from "./components/DisplayComponents/Logo";
 import Numbers from './components/ButtonComponents/NumberButtons/Numbers'
 import Display from "./components/DisplayComponents/Display";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
+import Specials from "./components/ButtonComponents/SpecialButtons/Specials";
 
 
 function App() {
@@ -37,7 +38,8 @@ function App() {
       <Display number={displayValue}/>
       <div className="App">
       <Numbers addNumbers={addNumber}/>
-       <Operators addNumbers={addNumber} /> 
+      <Operators /> 
+      <Specials />
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
     </div>

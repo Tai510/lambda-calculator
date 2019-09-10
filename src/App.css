@@ -38,3 +38,16 @@
       height: 55px;
       font-size: 20px;
   }
+
+  .equal {
+      text-align: center;
+  }
+
+  .operators {
+    text-align: center;
+}
+
+.specials {
+    text-align: center;
+}
+  

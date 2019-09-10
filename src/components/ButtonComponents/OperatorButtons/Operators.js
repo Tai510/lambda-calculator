@@ -9,14 +9,14 @@ const Operators = (props) => {
   const [operator1 , setOperator1] = useState(operators1)
   const [operator2 , setOperator2] = useState(operators2)
   return (
-    <div>
+    <div className='operatorState'>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
-       <div>
+       <div className='equal'>
        {operator1.map(op => <OperatorButton key={op.char} currentVal={op}/>)}
        </div>  
-       <div>
+       <div className='operators'>
        {operator2.map(op => <OperatorButton key={op.char} currentVal={op}/>)}
        </div>  
     </div>

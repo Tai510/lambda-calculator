@@ -11,11 +11,11 @@ const Numbers = (props) => {
   const [number3, setNumber3] = useState(numbers3)
   const [number4, setNumber4] = useState(numbers4)
   return (
-    <div className='numbers-buttons'>
+    <div>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
-
+    <div className='numbers-buttons'>
        <div>
        {number1.map(num => <NumberButton key = {num} 
                                             currentNum = {num}
@@ -35,12 +35,13 @@ const Numbers = (props) => {
        </div>  
 
        <div>
-       {number4.map(num => <NumberButton key = {num} 
+          {number4.map(num => <NumberButton key = {num} 
                                             currentNum = {num}
                                             addNumbers={props.addNumbers}/>)}
-       </div>                                     
+        </div>                                     
                                             
-       
+    </div>  
+ 
     </div>
   );
 };
