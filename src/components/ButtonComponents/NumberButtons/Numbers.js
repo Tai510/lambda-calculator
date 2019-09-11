@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-
 //import any components needed
 import NumberButton from "./NumberButton";
 //Import your array data to from the provided data file
+import { operators1 , operators2} from "../../../data";
 import { numbers1, numbers2 , numbers3, numbers4 } from "../../../data"
 const Numbers = (props) => {
   // STEP 2 - add the imported data to state
+  const [operator1 , setOperator1] = useState(operators1)
   const [number1, setNumber1] = useState(numbers1)
   const [number2, setNumber2] = useState(numbers2)
   const [number3, setNumber3] = useState(numbers3)
@@ -34,11 +35,10 @@ const Numbers = (props) => {
                                             addNumbers={props.addNumbers}/>)}
        </div>  
 
-       <div>
-          {number4.map(num => <NumberButton key = {num} 
-                                            currentNum = {num}
-                                            addNumbers={props.addNumbers}/>)}
-        </div>                                     
+       <div className='number4Div'>
+          {number4.map(num => <NumberButton key = {num} currentNum = {num}addNumbers={props.addNumbers}/>  )}
+                               
+       </div>                                     
                                             
     </div>  
  

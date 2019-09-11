@@ -14,16 +14,16 @@ import Specials from "./components/ButtonComponents/SpecialButtons/Specials";
 function App() {
   const [displayValue, setDisplayValue] = useState(0)
   
-  const addNumber = (number) => {
+  const addNumber1 = (number) => {
     setDisplayValue(displayValue => displayValue + number)
   }
 
-  // const addOperational = (number) => {
-  //   setDisplayValue(displayValue => displayValue)
-  // }
+  const addNumber2 = (number) => {
+    setDisplayValue(displayValue => displayValue + number)
+  }
 
-  // const addNumber = (number) => {
-  //   setDisplayValue(displayValue => displayValue + number )
+
+
     
   // }
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -34,12 +34,15 @@ function App() {
 
   return (
     <div className="container">
-      <Logo />
-      <Display number={displayValue}/>
+          <Logo />
+          <Display number={displayValue}/>
       <div className="App">
-      <Numbers addNumbers={addNumber}/>
-      <Operators /> 
-      <Specials />
+
+        <div className='number-style'>
+          <Numbers addNumbers={(addNumber1, addNumber2)}/>
+          <Operators /> 
+          <Specials />
+        </div>
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
       </div>
     </div>

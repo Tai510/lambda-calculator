@@ -29,6 +29,9 @@ const operators2 = [
     char: "-",
     value: "-"
   },
+]
+
+const operators3 = [
   {
     char: "+",
     value: "+"
@@ -37,6 +40,6 @@ const operators2 = [
 
 
 
-const specials = ["C", "+/-", "%"];
+const specials = ["C", "%"];
 
-export { numbers1, numbers2, numbers3, numbers4, operators1, operators2, specials };
+export { numbers1, numbers2, numbers3, numbers4, operators1, operators2, operators3 , specials };
