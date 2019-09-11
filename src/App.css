@@ -5,7 +5,8 @@
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
-    margin: 40px 440px;
+    margin: 0px 440px;
+    height: 675px;
 }
 .display {
     height: 100px;
@@ -35,15 +36,22 @@
 
 
   .button-style {
-      width: 130px;
-      height: 55px;
+      width: 120px;
+      height: 40px;
       font-size: 20px;
+      margin: 20px;
+      background-color: #8A8A8A;
+      border-radius: 5px;
+      border: 3px solid white;
+      color: white;
+      font-size: 23px;
+      font-weight: bolder;
   }
 
   .equal {
-      text-align: end;
-      margin-top: -55px;
-      margin-right: 80px;
+    text-align: end;
+    margin-top: -80px;
+    margin-right: 35px;
   }
 
   .operators {
@@ -52,15 +60,19 @@
 
 .specials {
     text-align: center;
-    margin-top: -55px;
-    margin-left: 130px;
+    margin-top: -81px;
+    margin-left: 159px;
 }
 
 .number4Div {
-    margin-right: 130px;
+    margin-right: 159px;
 }
 
 .plus {
-    margin-left: 80px;
+    margin-left: 35px;
 }
   
+.logo-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

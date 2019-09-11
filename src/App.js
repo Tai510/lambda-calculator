@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="container">
-          <Logo />
+          < Logo />
           <Display number={displayValue}/>
       <div className="App">
 
