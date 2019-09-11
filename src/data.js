@@ -11,23 +11,23 @@ const numbers4 = ["0", "."]
 
 const operators1 = [
   {
-    char: "=",
-    value: "="
+    char: "/",
+    value: "/"
   }
 ]
 
 const operators2 = [
   {
-    char: "/",
-    value: "/"
+    char: "-",
+    value: "-"
   },
   {
     char: "x",
     value: "*"
   },
   {
-    char: "-",
-    value: "-"
+    char: "=",
+    value: "="
   },
 ]
 
